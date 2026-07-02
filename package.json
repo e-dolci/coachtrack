@@ -1,13 +1,15 @@
 {
   "name": "coachtrack",
-  "private": true,
+  "homepage": "https://e-dolci.github.io/coach-track",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "dayjs": "^1.11.21",
@@ -27,6 +29,7 @@
     "eslint": "^10.6.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
+    "gh-pages": "^6.3.0",
     "globals": "^17.7.0",
     "postcss": "^8.5.16",
     "tailwindcss": "^3.4.4",
